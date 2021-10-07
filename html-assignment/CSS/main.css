@@ -35,4 +35,5 @@ li:nth-child(odd){
     width: 650px;
     height: 30px;
     border: #83978C;
+    border-width: 1em;
 }

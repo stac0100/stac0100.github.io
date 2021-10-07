@@ -22,6 +22,7 @@ li:nth-child(odd){
 .navbar a {
     text-decoration: none;
     background-color: #60524c;
+    border: #b9a789 3px solid;
     margin: 0;
     padding: 8px;
     color: white;
@@ -34,8 +35,7 @@ li:nth-child(odd){
     background-color: #b9a789;
     width: 650px;
     height: 30px;
-    border: #83978C;
-    border-width: 1em;
+    border: #83978C 5px dotted;
     font-style: italic;
     font-size: 20px;
 }

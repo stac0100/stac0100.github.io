@@ -29,9 +29,9 @@ li:nth-child(odd){
     padding: 8px;
     color: white;
 }
-.navbar a:link {
-    color: white;
+.navbar a:hover {
+    color:yellow;
 }
-.navbar a:visited {
+.navbar a:active {
     color: teal;
 }

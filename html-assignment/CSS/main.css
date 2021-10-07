@@ -30,7 +30,7 @@ li:nth-child(odd){
     color: white;
 }
 .navbar a:hover {
-    color:yellow;
+    color:teal;
 }
 .navbar a:active {
     color:white;

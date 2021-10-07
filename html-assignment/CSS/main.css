@@ -33,5 +33,5 @@ li:nth-child(odd){
     color:yellow;
 }
 .navbar a:active {
-    color: teal;
+    color:white;
 }

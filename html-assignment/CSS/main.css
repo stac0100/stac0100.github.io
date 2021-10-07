@@ -34,5 +34,5 @@ li:nth-child(odd){
 }
 
 #my-image {
-    box-shadow: 0,0,2px,1px,black;
+    box-shadow: 10px,10px,2px,1px,black;
 }

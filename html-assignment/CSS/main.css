@@ -12,5 +12,5 @@ header, footer {
 }
 
 #myimage { 
-    box-shadow: 0px, 0px,2px, 1px;
+    box-shadow: 0px, 0px,2px, 1px, black;
 }

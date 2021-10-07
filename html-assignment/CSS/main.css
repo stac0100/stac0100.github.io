@@ -39,3 +39,7 @@ li:nth-child(odd){
     font-style: italic;
     font-size: 20px;
 }
+
+#my-image {
+    box-shadow: 2px,1px,black;
+}

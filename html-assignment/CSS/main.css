@@ -11,9 +11,6 @@ header, footer {
     color: #83978C
 }
 
-#my-image { 
-    box-shadow: 20px, 20px, 20px, 10px, black;
-}
 ul {
     list-style-type: square;
 }
@@ -34,4 +31,8 @@ li:nth-child(odd){
 }
 .navbar a:active {
     color:white;
+}
+
+#my-image {
+    box-shadow: 0,0,2px,1px,black;
 }

@@ -29,10 +29,8 @@ li:nth-child(odd){
 .navbar a:hover {
     color:teal;
 }
-.navbar a:active {
-    color:white;
-}
 
-img#my-image {
-    box-shadow: 10px,10px,2px,1px,black;
+#quote {
+    background-color: #b9a789;
+    width: 500px;
 }

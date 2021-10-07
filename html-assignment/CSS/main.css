@@ -17,6 +17,15 @@ header, footer {
 ul {
     list-style-type: square;
 }
+
 li:nth-child(odd){
     background-color: #83978C;
+}
+
+.navbar a {
+    text-decoration: none;
+    background-color: #60524c;
+    margin: 0;
+    padding: 8px;
+    color: white;
 }

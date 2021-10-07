@@ -29,3 +29,6 @@ li:nth-child(odd){
     padding: 8px;
     color: white;
 }
+.navbar a:visited {
+    color: teal;
+}

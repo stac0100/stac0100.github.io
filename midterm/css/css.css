@@ -50,26 +50,37 @@ table {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 Start of main page code 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* setting the box-sizing for all elements */
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after{
+    box-sizing: inherit;
+  }
 
 html {
-    background: #a3bfaf;
+    background: #aad4cf;
     font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+    /* set a default family for the page */
+    font-family: Arial, Helvetica, sans-serif;
 
 body {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    line-height: 1.2em;
+    
 }
+
+
 main {
-    background-color: #ccdedf;
+    background-color: #d4e9e7;
 }
 
 .starfish {
-    width: 80vw;
+    width: 1024px;
     height: 341px;
     background-image: url(../images/lone-starfish-wide.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center center;
    
 }
@@ -78,4 +89,22 @@ h1 {
 }
 h2, h3 {
     font-size: 1.5rem;
+}
+
+/* positioning the image to wrap with text */
+#lonestarfish {
+    width: 15vw;
+    height: 15vw;
+    float: left;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+form li {
+    list-style-type: circle;
 }

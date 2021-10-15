@@ -65,9 +65,17 @@ main {
     background-color: #ccdedf;
 }
 
-header {
+.starfish {
+    width: 80vw;
+    height: 341px;
     background-image: url(../images/lone-starfish-wide.jpg);
     background-repeat: none;
-    height: 341px;
+    background-position: center center;
    
+}
+h1 {
+    font-size: 3rem;
+}
+h2, h3 {
+    font-size: 1.5rem;
 }

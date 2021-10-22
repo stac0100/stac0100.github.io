@@ -47,43 +47,125 @@ table {
 	border-spacing: 0;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                Start of main page code 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    DEFAULTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 html {
-    background: #aad4cf;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background: goldenrod;
 }
-
-/* adding the image in the header */
-.starfish {
-    background: url(../images/lone-starfish-wide.jpg) no-repeat;
-    width: 100vw;
-    height: 50vh;
-}
-
-/* styling the nav bar */
-nav li {
-    display: inline;
-    list-style: none;
-}
-
-/* styling links */
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: rgb(32, 86, 87);
-}
-
-/* styling headings */
 
 h1 {
-    font-size: 3rem;
-    padding: 30px;
-    position: relative, left 80px, top 2px;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: white;
 }
+
+h2 {
+    font-size: 48px;
+    margin: 5px 0;
+}
+
+h3 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+p, article, form, #contact {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer {
+    margin: 10px 5px;
+    height: 30px;
+    text-align: right;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        MAIN
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#container {
+    width: 1024px;
+    margin: 0 auto;
+    background: hotpink;
+}
+
+.header-image {
+    width: 100%;
+}
+
+#lonestarfish {
+    width: 200px;
+    float: left;
+    margin: 5px 10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    NAV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+nav {
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 0 90px;
+    width: 142px;
+    height: 44px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        CONTENT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* styling the form */
+.form {
+    padding: 0.7em 5px 0 5px;
+    border: 2px solid black;
+    margin: 0 10px;
+}
+
+.form div {
+    margin: 8px 0;
+}
+
+.form div button {
+    font-size: 16px;
+    background: hotpink;
+    border: 1px solid black;
+}
+
+#name, #email, #message {
+    width: 100%;
+}
+
+input, textarea, button {
+    margin: 5px 0;
+}
+
+/* styling the list */
+.facts {
+    list-style-type: disc;
+    padding: 0.7em 10px 0 18px;
+}
+
+.facts li {
+    padding-top: 0.1em;
+}
+
+
+

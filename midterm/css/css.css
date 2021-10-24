@@ -78,6 +78,7 @@ h3 {
 p, article, form, #contact {
     padding-left: 10px;
     padding-right: 10px;
+    line-height: 1.5;
 }
 footer {
     margin: 10px 5px;
@@ -101,7 +102,7 @@ footer {
 }
 /* making the article wrap around the image */
 #lonestarfish {
-    width: 200px;
+    width: 300px;
     float: left;
     margin: 5px 10px;
 }
@@ -176,7 +177,8 @@ input, textarea, button {
 /* styling the list */
 .facts {
     list-style-type: disc;
-    padding: 0.7em 10px 0 18px;
+    padding-left: 30px;
+    
 }
 
 .facts li {

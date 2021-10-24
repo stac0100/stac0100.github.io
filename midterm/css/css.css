@@ -127,6 +127,7 @@ nav a {
     height: 44px;
     text-transform: uppercase;
     font-size: 1.2rem;
+    color: black;
 }
 
 nav a:hover {

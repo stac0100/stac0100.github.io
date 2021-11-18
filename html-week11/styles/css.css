@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**********************************************
+                    Defaults
+**********************************************/
+
+h2 {
+    font-size: 1.8em;
+    margin: 10px 0 25px;
+    background-color: darkgray;
+}
+
+/**********************************************
+                    Grid
+**********************************************/
+
+div {
+    background-color: cornflowerblue;
+    border: 2px solid darkblue;
+    /* you can combine grid and flex - these divs are grid items, but we can make them display flex
+    to control the content inside of them*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.grid1 {
+    /* display grid tells the object to use the grid layout*/
+    display: grid;
+    /* you can define rows and columns - fr means "fraction", or a part of the available space*/
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: 500px repeat(2,1fr);
+    /* you don't have to define every row (or every column) - the browser will automatically create reows and columns
+    based on the number of elements you have */
+    grid-template-rows: 120px 120px;
+    
+    /* use gap to set space between the grid - or row-gap / column-gap to set them individually */
+    gap: 1em; /* if you set to values in gap, its the row-gap then column-gap*/
+}
+
+.grid2 {
+    margin-top: 50px;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px; /*this will define all rows as a certain value, including implicit or automatically created rows */
+
+    /* use align items and justify items to tell objects within the grid where they should sit in their grid space 
+    justify-items: end;
+    align-items: end;*/
+}
+/* use the grid lines to tell the first box to display differently */
+.grid2 div:nth-child(1) {
+    /*grid-column start/end control the span across colums, using grid lines*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    /* you can use justify-self and align-self to tell one cell how to behave */
+    justify-self: center;
+    align-self: center;
+}
+
+.grid2 div:nth-child(3) {
+    /*grid area is a short-hand requiring four values: row-start, column-start, row-end, column-end*/
+    grid-area: 2 / 3 / 5 / 4;
+    /*this is the equivalent of writing: 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5; 
+    */ 
+}
+
+.grid2 div:nth-child(4) {
+    /* use the span keyword to have the cell go over multiple rows or columns*/
+    grid-row-start: 4;
+    grid-row-end: span 3;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 120px;
+    /* if we want the grid to try to automatically fill gaps, we can use the auto-flow property */
+    grid-auto-flow: row dense;
+}
+
+.grid3 div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid3 div:nth-child(2) {
+    /* because this overlaps the first child, it gets pushed below, and creates a gap in the grid */
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.grid3 div:nth-child(3) {
+    grid-area: 1 / 1 / span 2 / span 2;
+}

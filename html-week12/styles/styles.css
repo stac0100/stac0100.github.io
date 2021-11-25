@@ -1,0 +1,21 @@
+
+/***************************************************
+                    FONT IMPORTS
+***************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+/***************************************************
+                    font styling
+***************************************************/
+
+.font-testa {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 40px;
+}
+
+.iconFontTest{
+    font-weight:bold;
+    font-size:60px;
+    color: orange;
+}

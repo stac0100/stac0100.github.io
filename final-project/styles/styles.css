@@ -54,12 +54,12 @@ table {
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    background-color: #181b21;
+    background-color:white;
 }
 h1 {
     font-size: 5em;
     font-weight: bold;
-    margin: 10px;
+    margin: 20px;
     line-height: 1.5;
     color: white;
 }
@@ -69,29 +69,66 @@ h2 {
     font-weight: bold;
     margin: 10px;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-size: 2em;
     font-weight: bold;
     margin: 10px;
+    padding-top: 30px;
 } 
 
 p {
     margin-top: 20px;
     margin-bottom: 10px;
     line-height: 1.4em;
+    padding-left: 10px;
 }
  nav {
      color:#bf8211;
  }
 
+ .containerA p {
+     color: white;
+     margin: 20px;
+ }
+
+ .containerD {
+     color: white;
+ }
+
+ hr {
+     border-top: 2px solid #bf8211;
+ }
+
+ span {
+     font-weight: bold;
+     padding-left: 10px;
+ }
+
+ footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #bf8211;
+    width: 100%;
+}
+
+footer p {
+   padding-top: 25px;
+   padding-bottom: 25px;
+   padding-left: 15px;
+   line-height: 2;
+}
+
+iframe {
+    margin: 0 20px 0 20px;
+}
 /***********************************************************
                         STYLING BUTTON
 ************************************************************/
 
 button {
-    width: 25%;
+    width: 30%;
     height: 80px;
     text-align: left;
     background-color:#181b21;
@@ -100,6 +137,7 @@ button {
     margin: 15px;
     border: none;
     padding-left: 25px;
+    color: white;
 }
 
 button .search {
@@ -108,15 +146,123 @@ button .search {
 
 button.yellow {
     background-color: #bf8211;
+    color: black;
+    width: 35%;
 }
+
+.visionbutton {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #bf8211;
+}
+/***********************************************************
+                    POSITIONING IMAGE
+************************************************************/
+.containerA {
+   position: relative;
+}
+.containerA img {
+    object-fit: fill;
+    height: 600px;
+    width: 100%;
+}
+.containera {
+    position: absolute;
+    top: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.containerD {
+    position:relative;
+}
+.containerD img {
+    height: 280px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.containerd {
+    position: absolute;
+    bottom: 5px;
+}
+
+/***********************************************************
+                        STYLING BOXES
+************************************************************/
 
 .containerB {
     background: #f2dc9b;
-    margin: 15px;
     padding: 15px;
     color: black;
 }
 
+.containerB img {
+    object-fit: fill;
+    width: 100%;
+}
+
+.containerC {
+    background: #f2dc9b;
+    margin: 15px;
+    padding: 10px;
+}
+
+.containerC img {
+    object-fit: fill;
+    height: 600px;
+    width: 100%;
+}
+
 /***********************************************************
-                            GRID
+                        STYLING FORM
 ************************************************************/
+.formB {
+    color:#f2dc9b;
+    height: fit-content;
+    width: fit-content;
+    justify-content: left;
+}
+
+.contact {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+input {
+    width: 100%;
+    margin: 8px 0;
+    height: 25px;
+}
+
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    height: 150px;
+    resize: none;
+}
+
+/***********************************************************
+                        STYLING Table
+************************************************************/
+table {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    height: 40px;
+    vertical-align: middle;
+}
+
+th{
+    background-color:#f2dc9b;
+    text-align: center;
+}
+
+td {
+    text-align: left;
+    padding-left: 15px;
+}
+

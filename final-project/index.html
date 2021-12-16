@@ -14,13 +14,13 @@
     <!-- adding the navigation and search bar -->
     <nav>
         <ul>
-            <li>Home</li>
+            <li class="home">Home</li>
             <li>About Us</li>
             <li>Services</li>
             <li>Team</li>
             <li>Contact</li>
             <form>
-            <input type="text" placeholder="Search.." name="search">
+            <input class="searchbar" type="text" placeholder="Search.." name="search">
             <button class="search" type="submit"><i class="icon icon-zoom"></i></button>
             </form>
         </ul>
@@ -47,9 +47,9 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus arcu sed magna dignissim, vulputate pellentesque eros venenatis. Praesent porta lacinia sem, in finibus ante facilisis sed. Aenean eget urna sed ante tristique lacinia. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
         <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse porttitor pharetra sapien eget interdum. Morbi aliquam lacus magna, non pharetra lorem ornare in. Etiam mollis augue magna. Proin fermentum sed sem id mattis. </p>
     </div>
-
-<article>
     <h2>Our Services</h2>
+<article class="grid">
+    
     <!-- adding images, text and buttons for the our services section -->
    
     <div class="containerC">
@@ -66,48 +66,46 @@
         <button type="button">Marketing Plans <i class="icon icon-right"></i></button>
     </div>
 
-    <div class="containerC">
+    <div class="containerC first">
         <img src="images/video.jpg" alt="cellphone on the youtube app">
         <h3>Video Production</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus arcu sed magna dignissim, vulputate pellentesque eros venenatis. Praesent porta lacinia sem, in finibus ante facilisis sed. Aenean eget urna sed ante tristique lacinia. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
         <button type="button">Video Plans <i class="icon icon-right"></i></button>
     </div>
 
-    <div class="containerC">
+    <div class="containerC second">
         <img src="images/web.jpg" alt="cellphone">
         <h3>Web Development</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus arcu sed magna dignissim, vulputate pellentesque eros venenatis. Praesent porta lacinia sem, in finibus ante facilisis sed. Aenean eget urna sed ante tristique lacinia. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
         <button type="button">Web Plans <i class="icon icon-right"></i></button>
     </div>
 
-    <div class="containerC">
+    <div class="containerC third">
         <img src="images/print.jpg" alt="mailboxes on a street">
         <h3>Print</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus arcu sed magna dignissim, vulputate pellentesque eros venenatis. Praesent porta lacinia sem, in finibus ante facilisis sed. Aenean eget urna sed ante tristique lacinia. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
         <button type="button">Print Plans <i class="icon icon-right"></i></button>
     </div>
-
-    <div class="containerD">
-        <img src="images/vision.jpg" alt="paper boats">
-        <div class="containerd">
-        <h3>Our Vision</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus arcu sed magna dignissim, vulputate pellentesque eros venenatis. Praesent porta lacinia sem, in finibus ante facilisis sed. Aenean eget urna sed ante tristique lacinia. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-        <button class="visionbutton" type="button">Learn More <i class="icon icon-right"></i></button>
-        </div>
     </div>
 </article>
-
+<div class="containerD fourth">
+    <img src="images/vision.jpg" alt="paper boats">
+    <div class="containerd">
+    <h3>Our Vision</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus arcu sed magna dignissim, vulputate pellentesque eros venenatis. Praesent porta lacinia sem, in finibus ante facilisis sed. Aenean eget urna sed ante tristique lacinia. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+    <button class="visionbutton" type="button">Learn More <i class="icon icon-right"></i></button>
+</div>
 <article>
     <h2>Our Team</h2>
     <!-- adding images and text for the our team section -->
-    <div class="containerC">
+    <div class="containerC float">
         <img src="images/john.jpg" alt="John Doe">
         <h3>John Doe</h3>
         <span>CEO and Co-owner</span>
         <hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus arcu sed magna dignissim, vulputate pellentesque eros venenatis. Praesent porta lacinia sem, in finibus ante facilisis sed. Aenean eget urna sed ante tristique lacinia. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
     </div>
-    <div class="containerC">
+    <div class="containerC float">
         <img src="images/bob.jpg" alt="Bob Rite">
         <h3>Bob Rite</h3>
         <span>CFO and Co-owner</span>
